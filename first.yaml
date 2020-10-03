@@ -1,0 +1,13 @@
+name: My First Workflow
+
+on: 
+    :push
+    branches: [master]
+
+jobs:
+    sayHelloJob:
+        runs-on: ubuntu-latest
+
+        steps:
+            name: Say Hello to the User
+            run: echo 'Hello, Welcome to your first Github Workflow!'
